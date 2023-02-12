@@ -14,6 +14,8 @@ function resetWatch(){
 
 function stopWatch(){
     clearInterval(Interval);
+    const pos = document.querySelector("#circle");
+    pos.style.animationPlayState = paused;
 }
 
 function startWatch(){
